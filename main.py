@@ -76,8 +76,8 @@ with mx_customer:
     st.metric("Customer", value=curr_customer, delta=f'{customer_diff_pct:.2f}%')
 
 with mx_profit_pct:
-    curr_profit = data.loc[data['order_year']==CURR_YEAR, 'profit'].values[0]
-    prev_profit = data.loc[data['order_year']==PREV_YEAR, 'profit'].values[0]
+    curr_profit = data.loc[data['order_year']==CURR_YEAR, 'profit_pct'].values[0]
+    prev_profit = data.loc[data['order_year']==PREV_YEAR, 'profit_pct'].values[0]
 
     profit_diff_pct = curr_profit - prev_profit
 
