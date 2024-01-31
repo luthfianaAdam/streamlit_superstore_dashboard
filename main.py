@@ -24,7 +24,7 @@ df['order_year'] = df['order_date'].dt.year
 CURR_YEAR = max(df['order_date'].dt.year)
 PREV_YEAR = CURR_YEAR - 1
 
-st.title("Sukha Dashboard")
+st.title("Superstore Dashboard")
 
 # st.dataframe(df)  # tampilkan dataframe
 st.write(CURR_YEAR)
